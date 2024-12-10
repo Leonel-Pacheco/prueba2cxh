@@ -63,7 +63,7 @@ export class ObtenerSheetService {
             Number(row[2]) || 0,
             Number(row[3]) || 0,
             Number(row[4]) || 0,
-            Number(row[5]) || 0
+            row[5] || 0,
           );
           asesores.push(asesor);
         }

@@ -1,0 +1,51 @@
+div {
+    overflow-x: auto; /* Agrega un scroll horizontal si el contenido excede el ancho */
+    max-width: 98vw; /* Limita el ancho máximo al 90% del viewport */
+    margin: 0 auto; /* Centra el div horizontalmente */
+}
+th, td {
+    word-wrap: break-word;
+    text-align: center;
+}
+th {
+    font-size: 12px;
+    white-space: nowrap; /* Evita saltos de línea */
+}
+td {
+    font-size: 8px;
+}
+tr:hover *{
+    color: #bea985;
+    font-weight: bolder;
+    text-shadow: 0 0 2px #726246;
+}
+table *{
+    border: 1.3px solid black;
+    background-color: #00272d;
+    box-shadow: 5px 5px 5px #00272d;
+    color: #fff;
+} 
+
+.titulo-equipo{
+    animation: shine 1s ease-in-out infinite;
+}
+
+
+/* Efecto titulo equipo */
+.container{
+    
+    
+    display: flex;
+    align-items: center;
+}
+
+.texto-neon{
+    text-transform: uppercase;
+    font-size: 5rem;
+    cursor: pointer;
+    color: red;
+    text-shadow: 0 0 10px rgba(255,0,0,.5);
+}
+
+
+

@@ -14,8 +14,8 @@ export class AstudilloComponent implements OnInit {
 
   constructor(private obtenerAsesores: ObtenerSheetService, private cdr: ChangeDetectorRef) { }
 
-  ngOnInit(): void {
-    this.obtenerAsesores.listMajors('1lEVmAYgTwZFNx2aSm3DKJdSdq9KocHamhf43ZoldAFU','PRODU!A5:F').then((data: Asesor[]) => {
+  async ngOnInit(){
+    await this.obtenerAsesores.listMajors('1lEVmAYgTwZFNx2aSm3DKJdSdq9KocHamhf43ZoldAFU','PRODU!A5:F').then((data: Asesor[]) => {
       this.asesores = data;
     }).catch((error) => {
       console.error('Error al obtener asesores:', error);

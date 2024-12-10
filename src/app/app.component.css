@@ -1,0 +1,36 @@
+.navbar{
+    background-color: #00272d;
+    padding: 0;
+}
+.navbar-toggler{
+    padding: 0.01rem;
+}
+.navbar-toggler-icon{
+    width: 30px;
+    height: 25px;
+}
+.fond-menu{
+    background-color: #00272d;
+}
+.menu{
+    background-color: #00272d; 
+    border-bottom: 1px solid black;
+}
+.palabra-menu{
+    color: black; text-shadow: 0 0 4px #fff;
+}
+.desplegable{
+    background-color: #134647; cursor: pointer;
+}
+
+.offcanvas{
+    width: 23vw;
+}
+
+/*------------*/
+.lin{
+    border-top: 1px solid gray;
+}
+.links-externos {
+    color: red;
+}

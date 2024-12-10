@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark fixed-top" style="background-color: #00272d;">
-  <div class="container-fluid" style="background-color: #00272d;">
+<nav class="navbar navbar-dark fixed-top">
+  <div class="container-fluid fond-menu">
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
       aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -7,12 +7,11 @@
     <a class="navbar-brand" href="#">Productividad Online</a>
     <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
       aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header" style="background-color: #00272d; border-bottom: 1px solid black;">
-        <h5 class="offcanvas-title bolder" id="offcanvasDarkNavbarLabel"
-          style="color: black; text-shadow: 0 0 4px #fff;">Menu</h5>
+      <div class="offcanvas-header menu">
+        <h5 class="offcanvas-title bolder palabra-menu" id="offcanvasDarkNavbarLabel">Menu</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body" style="background-color: #00272d;">
+      <div class="offcanvas-body fond-menu">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -21,27 +20,27 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Productividad Por Equipos
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #134647; cursor: pointer;"
-              data-bs-dismiss="offcanvas">
+            <ul class="dropdown-menu dropdown-menu-dark desplegable" data-bs-dismiss="offcanvas">
               <li><a class="dropdown-item" routerLink="/eq-astudillo">Eq. Astudillo</a></li>
               <li><a class="dropdown-item" routerLink="/eq-escalante">Eq. Escalante</a></li>
               <li><a class="dropdown-item" routerLink="/eq-iviris">Eq. Iviris</a></li>
               <li><a class="dropdown-item" routerLink="/eq-juarez">Eq. Juarez</a></li>
               <li><a class="dropdown-item" routerLink="/eq-maurenzi">Eq. Maurenzi</a></li>
               <li><a class="dropdown-item" routerLink="/eq-silva">Eq. Silva</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Algo extra</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Ir a datos extendidos</a>
           </li>
         </ul>
+        <!-- Enlaces al pie del offcanvas -->
+        <div class="position-absolute bottom-0 start-0 w-100 pb-3 lin">
+          <a class="nav-link text-muted fs-6" routerLink="/calculadora-ajustes">Calculadora de Ajustes</a>
+          <a class="nav-link text-muted links-externos" routerLink="/buscador-nodos">Buscador Nodos CN</a>
+        </div>
       </div>
     </div>
   </div>
 </nav>
-<br><br><br><br><br>
+<br><br>
 <router-outlet></router-outlet>
